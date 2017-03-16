@@ -1,0 +1,17 @@
+
+
+node install
+
+gulp install
+
+https://github.com/ericmdantas/generator-ng-fullstack package install
+
+typescript install
+
+typings install
+
+https://github.com/twbs/bootstrap-sass install
+
+npm install
+
+gulp client.watch
