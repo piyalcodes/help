@@ -1,17 +1,13 @@
 
 
-node install
-
-gulp install
-
-https://github.com/ericmdantas/generator-ng-fullstack package install
-
-typescript install
-
+npm install -g generator-ng-fullstack (from https://github.com/ericmdantas/generator-ng-fullstack package install)
+npm install yo
+yo ng-fullstack
+npm install gulp
+npm install typescript
 typings install
-
-https://github.com/twbs/bootstrap-sass install
-
 npm install
-
 gulp client.watch
+
+additional
+https://github.com/twbs/bootstrap-sass install
