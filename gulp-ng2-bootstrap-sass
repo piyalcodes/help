@@ -11,3 +11,7 @@ gulp client.watch
 
 additional
 https://github.com/twbs/bootstrap-sass install
+
+https://github.com/angular/protractor
+https://github.com/ealves/protractor-recorder
+
