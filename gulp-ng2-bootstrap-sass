@@ -17,3 +17,4 @@ https://github.com/ealves/protractor-recorder
 
 Better templete structure : http://embed.plnkr.co/eBv3hZZSk9Tx3joykvSQ/
 
+run the site on dev server "npm install -g webpack-dev-server"
