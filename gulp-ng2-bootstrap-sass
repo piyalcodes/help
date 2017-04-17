@@ -7,11 +7,13 @@ npm install gulp
 npm install typescript
 typings install
 npm install
-gulp client.watch
+//gulp client.watch ----removed
+webpack-dev-server --content-base
+webpack --watch
+
 
 additional
 https://github.com/twbs/bootstrap-sass install
-
 https://github.com/angular/protractor
 https://github.com/ealves/protractor-recorder
 
