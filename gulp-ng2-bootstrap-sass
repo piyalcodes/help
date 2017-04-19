@@ -14,8 +14,8 @@ webpack --watch
 
 additional
 https://github.com/twbs/bootstrap-sass install
-https://github.com/angular/protractor
-https://github.com/ealves/protractor-recorder
+https://github.com/angular/protractor (e2e testing)
+https://github.com/ealves/protractor-recorder  (e2e testing)
 
 Better templete structure : http://embed.plnkr.co/eBv3hZZSk9Tx3joykvSQ/
 
