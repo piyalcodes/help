@@ -22,3 +22,8 @@ Better templete structure : http://embed.plnkr.co/eBv3hZZSk9Tx3joykvSQ/
 run the site on dev server "npm install -g webpack-dev-server"
 
 webpack-dev-server --content-base
+
+Environment variable
+C:\Users\USER\AppData\Local\Programs\Python\Python36-32
+C:\Users\USER\AppData\Local\Programs\Python\Python36-32\Scripts
+C:\Users\USER\AppData\Roaming\Python\Python36\Scripts
