@@ -1,0 +1,92 @@
+
+@mixin  StyledCheckBoxMixin($val1,$val2, $val3, $val4, $val5, $val6) {
+  width: $val5;
+  position: relative;
+  margin: $val5 auto;
+  padding: 5px 0 0 5px;
+
+  label {
+    cursor: pointer;
+    margin-left: -26px;
+    z-index: 1000000;
+    position: absolute;
+    padding-left: 28px;
+  }
+
+  .CheckMark {
+    width: $val5;
+    height: $val5;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    background: linear-gradient(top, $val1 0%, $val2 40%, $val3 100%);
+    outline: 1px solid $val6;
+    &:hover {
+      outline: 1px solid $val1;
+    }
+    &:after {
+      content: '';
+      width: 12px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 1px solid $val4;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.5;
+    }
+
+    span {
+      margin-left: 30px;
+      vertical-align: super;
+      i {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + .CheckMark {
+      background: $val1;
+      background: linear-gradient(top, $val1 0%, $val2 40%, $val3 100%);
+      outline: 1px solid $val1;
+    }
+    &:checked + .CheckMark:after {
+      opacity: 1;
+    }
+    &:indeterminate, &:indeterminate + .CheckMark {
+      background: $val4;
+      &:after {
+        content: '' !important;
+        width: 12px !important;
+        height: 12px !important;
+        position: absolute !important;
+        top: 4px !important;
+        left: 3px !important;
+        background: $val1;
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+
+<div >
+                                                    <span class="CheckBox">
+                                                        <input type="checkbox"  value="id1" id="id1" name="check" />
+                                                        <span class="CheckMark"></span>
+                                                        <label for="id1"></label>
+                                                    </span>
+                                                </div>
+
+@include StyledCheckBoxMixin('blue', 'grey', 'green', white, 20px, 'grey');
