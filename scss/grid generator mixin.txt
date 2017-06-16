@@ -1,0 +1,14 @@
+$ColCount           : 12;
+
+@mixin GridGeneratorMixin($val1, $val2) {
+
+  @for $i from 1 through $val1 {
+    .col-#{$val2}-#{$i}{
+      width: ((100% / $val1) * $i);
+      float: left;
+    }
+  }
+}
+
+
+@include GridGeneratorMixin($ColCount, 'md');

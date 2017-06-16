@@ -1,0 +1,17 @@
+$space-values       : (  0, 3,  5,  10,  15,  20,  30,  40,  50) !default; // margin and padding values array
+$space-prefixes     : (p : padding,p-t : padding-top,p-r : padding-right,p-b : padding-bottom,p-l : padding-left,m  : margin,m-t : margin-top,m-r : margin-right, m-b : margin-bottom,    m-l : margin-left,
+) !default;
+$space-extra-param  : 'px !important' ; // this used to add 'px' to the class attribute value
+
+@mixin make-space($values, $prefixes, $extraParam) {
+  @each $attr-short, $attr-long in $prefixes {
+    @each $value in $values {
+      .#{$attr-short}-#{$value} {
+        #{$attr-long}: #{$value}#{$extraParam};
+      }
+    }
+  }
+}
+
+
+@include make-space($space-values, $space-prefixes, $space-extra-param); // Create the styles right here
